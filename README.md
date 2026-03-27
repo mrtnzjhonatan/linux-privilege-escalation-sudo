@@ -27,6 +27,7 @@ The sudo configuration allows a user to execute certain binaries without requiri
 Example from `/etc/sudoers`:
 admin ALL=(ALL) NOPASSWD: /usr/bin/less, /usr/bin/base64, /usr/bin/file
 
+![Sudoers Configuration](./sudoers_file.png)
 
 This violates least privilege and introduces risk.
 
@@ -42,8 +43,12 @@ Steps:
 
 2. Inside `less`, execute: !/bin/sh
 
+![Less Exploit](./less_exp.png)
 
-3. Gain root shell access
+4. Gain root shell access
+
+
+![Root Shell](./root_shell.png)
 
 ---
 
